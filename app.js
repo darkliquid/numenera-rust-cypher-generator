@@ -34,7 +34,8 @@
     var button = document.getElementById("generate"),
         descEl = document.getElementById("description"),
         abilityEl = document.getElementById("ability"),
-        opsEl = document.getElementById("operation");
+        opsEl = document.getElementById("operation"),
+        levEl = document.getElementById("level-target");
 
     function generate() {
       var materials = [], shapes = [], looks = [], num;
@@ -81,6 +82,13 @@
           ].join(' '),
           ability = randomArrayElement(data.Abilities.elements)[type],
           operation = randomArrayElement(data.Operation.elements)[type];
+
+      levEl.innerHTML = [
+        "A level",
+        level,
+        "rust cypher that targets",
+        { 'Self': 'yourself', 'Area': 'an area', 'Other': 'anything'}[type]
+      ].join(' ');
 
       var parts = description.split(" "),
           result = [],

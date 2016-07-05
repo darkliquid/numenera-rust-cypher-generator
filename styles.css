@@ -69,3 +69,14 @@ footer {
     line-height: 1.4em;
     text-align: left;
 }
+
+.rust-cypher dl dt {
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+    color: #0ac;
+    text-shadow: 0 0 3px #000;
+}
+
+.rust-cypher dl dd {
+    margin: 0 0 1em;
+}
