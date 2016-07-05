@@ -44,7 +44,7 @@
       while (true) {
         materials.push(randomArrayElement(data.Appearance.elements).Material);
         num = randomNum(20);
-        if (num != 20) {
+        if (num != 19) {
           break;
         }
       }
@@ -54,7 +54,7 @@
       while (true) {
         shapes.push(randomArrayElement(data.Appearance.elements).Shape);
         num = randomNum(20);
-        if (num != 20) {
+        if (num != 19) {
           break;
         }
       }
@@ -64,7 +64,7 @@
       while (true) {
         looks.push(randomArrayElement(data.Appearance.elements)["Look & Feel"]);
         num = randomNum(20);
-        if (num != 20) {
+        if (num != 19) {
           break;
         }
       }
