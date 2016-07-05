@@ -15,7 +15,7 @@
     if (arr.length === 1) {
       return arr[0];
     }
-    return arr.slice(0, arr.length - 1).join(', ') + ", and " + arr.slice(-1);
+    return arr.slice(0, arr.length - 1).join(', ') + " and " + arr.slice(-1);
   }
 
   function randomNum(limit) {
@@ -75,8 +75,8 @@
           description = [
             'a',
             arrayToSentence(looks).toLowerCase(),
-            'object made of',
-            arrayToSentence(materials).toLowerCase(),
+            'object, made of',
+            arrayToSentence(materials).toLowerCase() + ',',
             'shaped like',
             arrayToSentence(shapes).toLowerCase()
           ].join(' '),
