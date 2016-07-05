@@ -72,12 +72,12 @@
       var type = randomArrayElement(['Self', 'Area', 'Other']),
           level = randomNum(6)+2,
           description = [
-            'A',
-            arrayToSentence(looks),
+            'a',
+            arrayToSentence(looks).toLowerCase(),
             'object made of',
-            arrayToSentence(materials),
+            arrayToSentence(materials).toLowerCase(),
             'shaped like',
-            arrayToSentence(shapes)
+            arrayToSentence(shapes).toLowerCase()
           ].join(' '),
           ability = randomArrayElement(data.Abilities.elements)[type],
           operation = randomArrayElement(data.Operation.elements)[type];
